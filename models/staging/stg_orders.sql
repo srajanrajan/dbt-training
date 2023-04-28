@@ -4,9 +4,11 @@ select
     o.shipdate,
     o.shipmode,
     o.ordersellingprice - o.ordercostprice as orderprofit,
+    c.customerid,
     c.customername,
     c.segment,
     c.country,
+    p.productid,
     p.category,
     p.productname,
     p.subcategory
